@@ -170,3 +170,66 @@ h1, h2, h3 {
     right: 12%;
     z-index: -1;
   }
+
+  /* -------- CATEGORY CSS -------- */
+  
+  #main_content {
+    margin-top: 6em;
+  }
+  #category {
+    text-align: center;
+  }
+
+  #category > p {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #5e6282;
+  }
+
+  #category h2 {
+    line-height: 2;
+    font-size: 2.5em;
+  }
+
+  .category_card_container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 3em;
+  }
+
+  .category_card {
+    border-radius: 25px;
+  }
+
+  .category_card:hover {
+    -webkit-box-shadow: 14px 25px 50px 9px rgba(237, 237, 237, 1);
+    -moz-box-shadow: 14px 25px 50px 9px rgba(237, 237, 237, 1);
+    box-shadow: 14px 25px 50px 9px rgba(237, 237, 237, 1);
+  }
+
+  .category_card p {
+    font-size: 0.75em;
+    line-height: 1.5em;
+    width: 50%;
+    margin: auto;
+    margin-top: 1em;
+    color: #5e6282;
+  }
+
+  .category_card:not(.flight) {
+    padding: 2.25em 0;
+  }
+
+  .category_card:has(.flight) {
+    padding-bottom: 2em;
+  }
+
+  .category_card:nth-child(4) {
+    padding: 2.75em 0 !important;
+  }
+
+  .category_description:not(.flight) {
+    margin-top: 2em;
+  }
