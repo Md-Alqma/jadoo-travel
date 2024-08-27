@@ -6,7 +6,68 @@
     <link rel="stylesheet" href="styles.css" />
     <title>Jadoo</title>
   </head>
-  <style></style>
+  <style>
+    #main_content {
+      margin-top: 6em;
+    }
+    #category {
+      text-align: center;
+    }
+
+    #category > p {
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #5e6282;
+    }
+
+    #category h2 {
+      line-height: 2;
+      font-size: 2.5em;
+    }
+
+    .category_card_container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      justify-content: space-between;
+      margin-top: 3em;
+    }
+
+    .category_card {
+      border-radius: 25px;
+    }
+
+    .category_card:hover {
+      -webkit-box-shadow: 14px 25px 50px 9px rgba(237, 237, 237, 1);
+      -moz-box-shadow: 14px 25px 50px 9px rgba(237, 237, 237, 1);
+      box-shadow: 14px 25px 50px 9px rgba(237, 237, 237, 1);
+    }
+
+    .category_card p {
+      font-size: 0.75em;
+      line-height: 1.5em;
+      width: 50%;
+      margin: auto;
+      margin-top: 1em;
+      color: #5e6282;
+    }
+
+    .category_card:not(.flight) {
+      padding: 2.25em 0;
+    }
+
+    .category_card:has(.flight) {
+      padding-bottom: 2em;
+    }
+
+    .category_card:nth-child(4) {
+      padding: 2.75em 0 !important;
+    }
+
+    .category_description:not(.flight) {
+      margin-top: 2em;
+    }
+  </style>
 
   <body>
     <header id="header">
@@ -61,5 +122,50 @@
       <img class="plane_1" src="/images/plane.png" alt="" />
       <img class="plane_2" src="/images/plane.png" alt="" />
     </header>
+    <main id="main_content">
+      <section id="category">
+        <p>Category</p>
+        <h2>We Offer Best Services</h2>
+        <div class="category_card_container">
+          <div class="category_card">
+            <img src="/images/communication.png" alt="" />
+            <div class="category_description">
+              <h4>Calculated Weather</h4>
+              <p>
+                Built Wicket longer admire do barton vanity itself do in it.
+              </p>
+            </div>
+          </div>
+          <div class="category_card flight">
+            <img src="/images/plane-1.png" alt="" />
+            <div class="category_description flight">
+              <h4>Best Flights</h4>
+              <p class="flight">
+                Built Wicket longer admire do barton vanity itself do in it.
+              </p>
+            </div>
+          </div>
+          <div class="category_card">
+            <img src="/images/mic.png" alt="" />
+            <div class="category_description">
+              <h4>Local Events</h4>
+              <p>
+                Built Wicket longer admire do barton vanity itself do in it.
+              </p>
+            </div>
+          </div>
+
+          <div class="category_card">
+            <img src="/images/customization.png" alt="" />
+            <div class="category_description">
+              <h4>Customization</h4>
+              <p>
+                Built Wicket longer admire do barton vanity itself do in it.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

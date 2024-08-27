@@ -15,6 +15,12 @@ button {
     cursor: pointer;
 }
 
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #181E4B;
+
+}
+
 #header {
     position: relative;
 }
@@ -50,6 +56,7 @@ button {
     align-items: center;
     gap: 3.5em;
     cursor: pointer;
+    color: #212832;
   }
 
   .nav_link button {
@@ -82,7 +89,7 @@ button {
 
   .headline {
     text-transform: uppercase;
-    color: rgb(255, 98, 0);
+    color: #DF6951;
     font-weight: 700;
   }
 
@@ -91,6 +98,7 @@ button {
     font-family: Georgia, "Times New Roman", Times, serif;
     font-weight: 700;
     line-height: 60px;
+    
   }
 
   .hero_image img {
@@ -117,7 +125,7 @@ button {
     width: 80%;
     letter-spacing: 0.5px;
     line-height: 1.75;
-    color: #2c2c2c;
+    color: #5E6282;
   }
   
   .main_button {
