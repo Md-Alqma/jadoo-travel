@@ -13,21 +13,42 @@
       text-align: left;
     }
 
-    .booking-details > p {
+    .booking-details-title > p {
       font-weight: 700;
       color: #5e6282;
       margin-bottom: 1em;
     }
 
-    .booking-details > h2 {
+    .booking-details-title > h2 {
       font-size: 2.5em;
       line-height: 1.25;
       width: 60%;
     }
 
+    .booking-details {
+      display: flex;
+      flex-direction: column;
+      gap: 2em;
+      margin-top: 2em;
+    }
+
+    .booking-detail-card {
+      display: flex;
+      align-items: center;
+      width: 50%;
+      gap: 1em;
+      color: #5e6282;
+    }
+
+    .booking-detail-card h4 {
+      font-size: 0.9em;
+    }
+
+    .booking-detail-card p {
+      font-size: 0.8em;
+    }
     .booking-card {
       width: 300px;
-      height: 300px;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
       border-radius: 24px;
       margin: 3em 10em 0 0;
@@ -62,6 +83,20 @@
       font-size: 0.8em;
       color: #5e6282;
       margin-top: 0.8em;
+    }
+
+    .booking-icons {
+      margin-top: 0.8em;
+    }
+
+    .people {
+      margin-top: 0.8em;
+      display: flex;
+      gap: 1em;
+    }
+
+    .people p {
+      font-size: 0.6em;
     }
   </style>
 
@@ -206,10 +241,43 @@
       </section>
       <section id="booking">
         <div class="booking-container">
-          <div class="booking-details">
+          <div class="booking-details-title">
             <p>Easy and Fast</p>
             <h2>Book Your Next trip In 3 Easy Steps</h2>
+            <div class="booking-details">
+              <div class="booking-detail-card">
+                <img src="images/custom.png" alt="" />
+                <div>
+                  <h4>Choose Destination</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Urna, tortor tempus.
+                  </p>
+                </div>
+              </div>
+              <div class="booking-detail-card">
+                <img src="images/payment.png" alt="" />
+                <div>
+                  <h4>Make Payment</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Urna, tortor tempus.
+                  </p>
+                </div>
+              </div>
+              <div class="booking-detail-card">
+                <img src="images/transport.png" alt="" />
+                <div>
+                  <h4>Reach Airport on Selected Date</h4>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Urna, tortor tempus.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
+
           <div class="booking-card">
             <div class="booking-image-container">
               <img src="/images/booking1.jpg" alt="" />
@@ -218,9 +286,13 @@
             <h3>Trip To Greece</h3>
             <p>14-29 June | by Steve Jobs</p>
             <div class="booking-icons">
-              <div class="icon-box"></div>
-              <div class="icon-box"></div>
-              <div class="icon-box"></div>
+              <img src="/images/LEAF.png" alt="" />
+              <img src="images/map icon.png" alt="" />
+              <img src="images/send.png" alt="" />
+            </div>
+            <div class="people">
+              <img src="/images/building 1.png" alt="" />
+              <p>24 people going</p>
             </div>
           </div>
         </div>
