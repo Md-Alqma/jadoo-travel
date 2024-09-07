@@ -8,7 +8,7 @@
 }
 
 section {
-    padding: 2em 5em;
+    padding: 2em 4em;
 }
 
 button {
@@ -176,17 +176,19 @@ h1, h2, h3 {
   #main_content {
     margin-top: 6em;
   }
-  #category {
+
+  section {
     text-align: center;
+    margin-top: 2em;
   }
 
-  #category > p {
+  section > p {
     text-transform: uppercase;
     font-weight: 700;
     color: #5e6282;
   }
 
-  #category h2 {
+  section > h2 {
     line-height: 2;
     font-size: 2.5em;
   }
@@ -233,3 +235,41 @@ h1, h2, h3 {
   .category_description:not(.flight) {
     margin-top: 2em;
   }
+
+  /* -------- Destination CSS -------- */
+
+  .destination-card-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+  }
+
+  .destination-card {
+    position: relative;
+  }
+
+  .destination-image {
+    width: 100%;
+  }
+
+  .destination-image img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .destination-card-details {
+    background-color: #fff;
+    position: absolute;
+    bottom: 140px;
+    width: 100%;
+    text-align: left;
+    padding: 1em 4.5em;
+  }
+
+  .destination-card-detail-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+  }
+
+  /* -------- Booking CSS -------- */
