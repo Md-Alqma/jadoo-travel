@@ -8,7 +8,7 @@
 }
 
 section {
-    padding: 2em 4em;
+    padding: 4em 7em;
 }
 
 button {
@@ -31,7 +31,7 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em 5em;
+    padding: 2em 7em;
   }
 
   .logo {
@@ -81,7 +81,7 @@ h1, h2, h3 {
   }
 
   .hero_desciption {
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -261,7 +261,7 @@ h1, h2, h3 {
   .destination-card-details {
     background-color: #fff;
     position: absolute;
-    bottom: 140px;
+    bottom: 135px;
     width: 100%;
     text-align: left;
     padding: 1em 4.5em;
@@ -279,6 +279,7 @@ h1, h2, h3 {
     display: flex;
     justify-content: space-between;
     text-align: left;
+    margin-top: -2em;
   }
 
   .booking-details-title > p {
@@ -336,9 +337,10 @@ h1, h2, h3 {
 
   .booking-back {
     position: absolute;
-    top: -250px;
+    top:-150px;
     z-index: -1;
-    left: -100px;
+    left: 0px;
+    width: 150%;
   }
 
   .booking-card h3 {
